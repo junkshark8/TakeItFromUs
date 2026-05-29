@@ -1,0 +1,191 @@
+@font-face {
+    font-family: Marvels;
+    src: url('fonts/marvels.ttf') format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+    word-break: break-word;
+    text-wrap: balance;
+  }
+
+html, body {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    min-height: 100%;
+    background-color: #FAFAFA;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    color: #9B0387;
+}
+
+a:hover, a:focus {
+    color: #4930ab;
+}
+
+a:visited {
+    color: #4b5561;
+}
+
+.main {
+    width: 100%;
+    max-width: 100%;
+    margin-inline: auto;
+    padding-bottom: 5rem;
+}
+
+.banner {
+    background-color: #C1C8D1;
+    width: 100%;
+    min-width: 100%;
+
+    .hero {
+        display: flex;
+        flex-direction: row;
+        margin: auto;
+
+        .hero-img {
+            width: 30%;
+            max-width: 30%;
+            object-fit: contain;
+            margin-top: auto;
+            padding-top: 1rem;
+            flex-grow: 2;
+        }
+
+        .hero-txt {
+            width: 70%;
+            max-width: 70%;
+            margin-inline: 1rem 10vw;
+            padding-block: 3rem 1rem;
+            flex-grow: 1;
+
+            p {
+                text-wrap: pretty;
+            }
+        }
+
+        h1 {
+            margin-top: 0;
+            font-family: 'Marvels', 'Arial Black';
+            font-weight: 900;
+        }
+    }
+}
+
+.episode-container {
+    width: 60%;
+    max-width: 60%;
+    margin: auto;
+    padding-top: 1rem;
+    display: grid;
+    grid-template-columns: auto auto;
+
+    .episode {
+        width: 100%;
+        max-width: 100%;
+        padding: 1rem .5rem 1rem .5rem;
+        
+        .ep-img {
+            width: 100%;
+            max-width: 100%;
+            padding: 0;
+        }
+
+        h3 {
+            margin-block: .5rem;
+            color: #4930ab;
+            font-family: 'Marvels', 'Arial Black';
+        }
+
+        p {
+            margin-block: .5rem;
+        }
+
+        .download-container {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            min-width: 100%;
+            max-width: 100%;
+        }
+
+        h4 {
+            margin-block: 1rem 0;
+        }
+    }
+}
+
+audio {
+    width: 100%;
+    min-width: 100%;
+}
+
+@media (max-width: 1140px) {
+    .banner {
+        .hero {
+            .hero-txt {
+                width: 50%;
+                max-width: 50%;
+            }
+
+            .hero-img {
+                width: 50%;
+                min-width: 50%;
+            }
+        }
+    }
+}
+
+@media (max-width: 950px) {
+    .episode-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .banner {    
+        .hero {
+            display: flex;
+            flex-direction: column;
+            flex-flow: column-reverse;
+            width: 80%;
+            max-width: 80%;
+
+            .hero-img {
+                width: 100%;
+                min-width: 100%;
+                padding-top: 0;
+            }
+
+            .hero-txt {
+                width: 100%;
+                min-width: 100%;
+                margin-inline: 0;
+                padding-bottom: 0;
+
+                h1 {
+                    margin: 0;
+                }
+
+                h2 {
+                    margin-block: .5rem 0;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    .episode-container {
+        width: 80%;
+        max-width: 80%;
+    }
+}

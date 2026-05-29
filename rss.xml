@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+
+<channel>
+  <title>Take It From us</title>
+  <link>https://takeitfrom.us</link>
+  <description>The concepts we’re talking about are not our original ideas. 
+  We are two white guys from Iowa City sharing thoughts we have that have been 
+  informed by many different indigenous and black perspectives. The point of this 
+  podcast is not to claim expertise about these ideas, but to urge other white people 
+  to start (and never stop) deconstructing whiteness and dismantling white supremacy. 
+  The title of the podcast is somewhat ironic—you should not take our perception of 
+  these concepts at face value. Dig into the resources provided and actively seek out more.
+  </description>
+
+   <item>
+	<title>the title of your post</title>
+	<link>https://link-to-your-post.com</link>
+	<description>description of the post / item</description>
+  </item>
+
+</channel>
+</rss>
